@@ -129,32 +129,16 @@
 				</ul>
 			</div>
 		</div>
-		<p class="text-center"><button class="btn btn-info" onclick="swap();">Swap</button></p>
 	</div>
 </section>
 
 <footer class="text-center">
-	<p>&copy; Copyright 2020. <mark><span class="text-center" id="timer"></span></mark></p>
+	<p>&copy; Copyright 2020.</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-<script>
-function swap() {
-	var a = document.getElementsByClassName("swap1")[0].innerHTML;
-	var b = document.getElementsByClassName("swap2")[0].innerHTML;
-
-	document.getElementsByClassName("swap1")[0].innerHTML = b;
-	document.getElementsByClassName("swap2")[0].innerHTML = a;
-}
-var timer = setInterval(startTime,1000);
-function startTime() {
-    var dt = new Date();
-    document.getElementById("timer").innerHTML = dt.toLocaleTimeString();
-}
-</script>
 
 </body>
 </html>
